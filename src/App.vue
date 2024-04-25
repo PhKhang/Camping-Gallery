@@ -1,23 +1,31 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import {Cloudinary} from "@cloudinary/url-gen";
 import HelloWorld from './components/HelloWorld.vue'
+import { AdvancedImage } from "@cloudinary/vue";
+import { fill } from "@cloudinary/url-gen/actions/resize";
+
+const cld = new Cloudinary({cloud: {cloudName: 'dwgvuiqq6',},});
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <!-- <HelloWorld msg="You did it!" /> -->
 
-      <nav>
+      <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-      </nav>
+      </nav> -->
     </div>
   </header>
+  
+  <h1>Hello</h1>
+  <!-- <img :src="url" alt="" srcset=""> -->
 
-  <RouterView />
+  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
