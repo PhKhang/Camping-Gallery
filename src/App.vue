@@ -13,35 +13,36 @@ const fonts = import.meta.glob('@/assets/*.jpg')
 </script>
 
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-
-    <div class="">
-      <!-- <HelloWorld msg="You did it!" /> -->
-
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
+  <div class="main">
+    
+    <header>
+      <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
+      <div class="">
+        <!-- <HelloWorld msg="You did it!" /> -->
+        <!-- <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav> -->
+      </div>
+    </header>
+    
+    <h1>Xin chào từ Đội Sói</h1>
+    <h2>Những kỷ niệm nơi đất trại...</h2>
+    <div class="gall">
+      <img src="@/assets/firstDay.jpg" alt="" srcset="">
+      <img src="@/assets/buildThing.jpg" alt="" srcset="">
+      <img src="@/assets/discuss.jpg" alt="" srcset="">
+      <img src="@/assets/learn2.jpg" alt="" srcset="">
+      <img src="@/assets/truc.jpg" alt="" srcset="">
+      <img src="@/assets/truc1.jpg" alt="" srcset="">
     </div>
-  </header>
-  
-  <h1>Xin chào từ Đội Sói</h1>
-  <h2>Những kỷ niệm nơi đất trại...</h2>
-  <div class="gall">
-    <img src="@/assets/firstDay.jpg" alt="" srcset="">
-    <img src="@/assets/buildThing.jpg" alt="" srcset="">
-    <img src="@/assets/discuss.jpg" alt="" srcset="">
-    <img src="@/assets/learn2.jpg" alt="" srcset="">
-    <img src="@/assets/truc.jpg" alt="" srcset="">
-    <img src="@/assets/truc1.jpg" alt="" srcset="">
+    
+    <h2>Mini game</h2>
+    <img src="@/Minigame-tìm-từ (1)1.jpg" alt="" srcset="">
+    <!-- <img :src="url" alt="" srcset=""> -->
+    <!-- <RouterView /> -->
+    
   </div>
-  
-  <h2>Mini game</h2>
-  <img src="@/Minigame-tìm-từ (1)1.jpg" alt="" srcset="">
-  <!-- <img :src="url" alt="" srcset=""> -->
-
-  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
@@ -50,10 +51,17 @@ header {
   max-height: 100vh;
 }
 
+.main {
+  width: 100%;
+  max-width: 1000px;
+  padding: auto;
+}
+
 .gall {
   width: 100%;
+  background-color: darkslategray;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 img {
