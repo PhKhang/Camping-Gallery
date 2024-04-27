@@ -12,7 +12,7 @@ const cld = new Cloudinary({cloud: {cloudName: 'dwgvuiqq6',},});
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
-    <div class="wrapper">
+    <div class="">
       <!-- <HelloWorld msg="You did it!" /> -->
 
       <!-- <nav>
@@ -22,7 +22,12 @@ const cld = new Cloudinary({cloud: {cloudName: 'dwgvuiqq6',},});
     </div>
   </header>
   
-  <h1>Hello</h1>
+  <h1>Xin chào từ Đội Sói</h1>
+  <h2>Những kỷ niệm nơi đất trại...</h2>
+  <div class="gall">
+    <img src="@/assets/firstDay.jpg" alt="" srcset="">
+    <img src="@/assets/buildThing.jpg" alt="" srcset="">
+  </div>
   <!-- <img :src="url" alt="" srcset=""> -->
 
   <!-- <RouterView /> -->
@@ -32,6 +37,19 @@ const cld = new Cloudinary({cloud: {cloudName: 'dwgvuiqq6',},});
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+.gall {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 500px;
+  object-fit: cover;
 }
 
 .logo {
