@@ -6,6 +6,10 @@ import { AdvancedImage } from "@cloudinary/vue";
 import { fill } from "@cloudinary/url-gen/actions/resize";
 
 const cld = new Cloudinary({cloud: {cloudName: 'dwgvuiqq6',},});
+const fonts = import.meta.glob('@/assets/*.jpg')
+// for len(fonts){
+//   console.log(fonts)
+// }
 </script>
 
 <template>
@@ -27,7 +31,14 @@ const cld = new Cloudinary({cloud: {cloudName: 'dwgvuiqq6',},});
   <div class="gall">
     <img src="@/assets/firstDay.jpg" alt="" srcset="">
     <img src="@/assets/buildThing.jpg" alt="" srcset="">
+    <img src="@/assets/discuss.jpg" alt="" srcset="">
+    <img src="@/assets/learn2.jpg" alt="" srcset="">
+    <img src="@/assets/truc.jpg" alt="" srcset="">
+    <img src="@/assets/truc1.jpg" alt="" srcset="">
   </div>
+  
+  <h2>Mini game</h2>
+  <img src="@/Minigame-tìm-từ (1)1.jpg" alt="" srcset="">
   <!-- <img :src="url" alt="" srcset=""> -->
 
   <!-- <RouterView /> -->
